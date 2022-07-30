@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:islami_c6_sat/AppStyle.dart';
 import 'package:islami_c6_sat/widgets/sura_verse.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class QuranTab extends StatelessWidget {
 
@@ -24,18 +25,18 @@ class QuranTab extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
        children:[
          Image.asset("assets/images/quran_logo.png"),
-         Divider(thickness: 3, color: AppStyle.primaryColor,),
+         Divider(thickness: 3, color: AppStyle.lightPrimaryColor,),
          Container(
-           child: Text("Sura Name", style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),),
+           child: Text(AppLocalizations.of(context)!.suraName, style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),),
          ),
-         Divider(thickness: 3,color: AppStyle.primaryColor),
+         Divider(thickness: 3,color: AppStyle.lightPrimaryColor),
          Expanded(
            child: ListView.separated(
                itemBuilder: (context, index){
                   return  SuraVerse(suraNames[index], index);
                },
                separatorBuilder: (context, index){
-                 return Divider(thickness: 3,color: AppStyle.primaryColor);
+                 return Divider(thickness: 3,color: AppStyle.lightPrimaryColor);
                },
                itemCount: suraNames.length),
          )

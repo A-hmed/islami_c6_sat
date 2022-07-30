@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:islami_c6_sat/model/hadeth.dart';
 import 'package:islami_c6_sat/screens/ahdeth_details/ahadeth_details.dart';
-
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import '../../AppStyle.dart';
 
 class AhadethTab extends StatefulWidget {
@@ -25,16 +25,16 @@ class _AhadethTabState extends State<AhadethTab> {
                   Image.asset("assets/images/hadeth_logo.png"),
                   Divider(
                     thickness: 3,
-                    color: AppStyle.primaryColor,
+                    color: AppStyle.lightPrimaryColor,
                   ),
                   Container(
-                    child: const Text(
-                      "Ahadeth",
+                    child:  Text(
+                      AppLocalizations.of(context)!.ahadeth,
                       style:
                           const TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
                     ),
                   ),
-                  Divider(thickness: 3, color: AppStyle.primaryColor),
+                  Divider(thickness: 3, color: AppStyle.lightPrimaryColor),
                   Expanded(
                     child: ListView.separated(
                         itemBuilder: (context, index) {
@@ -53,7 +53,7 @@ class _AhadethTabState extends State<AhadethTab> {
                         },
                         separatorBuilder: (context, index) {
                           return Divider(
-                              thickness: 3, color: AppStyle.primaryColor);
+                              thickness: 3, color: AppStyle.lightPrimaryColor);
                         },
                         itemCount: ahadeth.length),
                   )

@@ -51,7 +51,7 @@ class _SuraDetailsState extends State<SuraDetails> {
                       style: TextStyle(fontSize: 24),);
                   },itemCount: suraLines.length,
                     separatorBuilder: (context, index){
-                      return Divider(thickness: 3,color: AppStyle.primaryColor);
+                      return Divider(thickness: 3,color: AppStyle.lightPrimaryColor);
                     },
                   ),
                 ),
