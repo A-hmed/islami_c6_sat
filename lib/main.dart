@@ -28,6 +28,7 @@ class MyApp extends StatelessWidget {
     LocaleProvider localeProvider = Provider.of(context);
     ThemeProvider themeProvider = Provider.of(context);
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       localizationsDelegates: [
         AppLocalizations.delegate, // Add this line
         GlobalMaterialLocalizations.delegate,
