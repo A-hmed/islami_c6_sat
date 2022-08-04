@@ -13,7 +13,7 @@ class SebhaTab extends StatefulWidget {
 class _SebhaTabState extends State<SebhaTab> {
   int cnt = 0;
 
-  double angle =45*pi/180;
+  int angle =0;
   List<String> tasabeh = [
     "سبحان الله",
     "الحمد لله",
@@ -72,12 +72,11 @@ class _SebhaTabState extends State<SebhaTab> {
                   .width * .7,
               child: InkWell(
                   onTap: () {
-                    angle+=100;
+                    angle+=5;
                    _increament();
                   },
-                  child: Transform.rotate(
-
-                      angle: angle,
+                  child: RotatedBox(
+                   quarterTurns:angle,
                       child: Image.asset("assets/images/body_sebha_logo.png"))),
             ),
           ],
