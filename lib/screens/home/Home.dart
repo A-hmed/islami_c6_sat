@@ -52,7 +52,7 @@ class _HomeState extends State<Home> {
                 BottomNavigationBarItem(icon: ImageIcon(AssetImage("assets/images/icon_hadeth.png")),label: "ahadeth",),
                 BottomNavigationBarItem(icon: ImageIcon(AssetImage("assets/images/icon_radio.png")),label: "radio"),
                 BottomNavigationBarItem(icon: ImageIcon(AssetImage("assets/images/icon_sebha.png")),label: "sebha"),
-                BottomNavigationBarItem(icon: ImageIcon(AssetImage("assets/images/ic_settings.png")),label: "setting")
+                BottomNavigationBarItem(icon: Icon(Icons.settings),label: "setting")
               ],
             ),
           ),

@@ -5,5 +5,6 @@
   "language": "اللغه",
   "light": "مضئ",
   "dark": "مظلم",
-  "theme": "الحاله"
+  "theme": "الحاله",
+  "numberofTasbeh": "عدد التسبيحات"
 }
