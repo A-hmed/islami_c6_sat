@@ -76,6 +76,7 @@ class _SebhaTabState extends State<SebhaTab> {
                    _increament();
                   },
                   child: Transform.rotate(
+
                       angle: angle,
                       child: Image.asset("assets/images/body_sebha_logo.png"))),
             ),
