@@ -5,5 +5,10 @@
   "language": "language",
   "light": "light",
   "dark": "dark",
-  "theme": "Theme"
+  "theme": "Theme",
+  "sobhanAllah": "Sobhan Allah",
+  "elhamdlelah": "Elhamd Lelah",
+  "allahAkbar": "Allah Akbar",
+  "tasbehNumber": "Tasbeh Number",
+  "radioQuranKareem": "radio quran kareem"
 }

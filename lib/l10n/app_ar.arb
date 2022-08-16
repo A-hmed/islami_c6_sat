@@ -1,9 +1,15 @@
 {
-  "islami": "اسلامي",
-  "suraName": "اسم السورة",
-  "ahadeth": "احاديث",
-  "language": "اللغه",
-  "light": "مضئ",
-  "dark": "مظلم",
-  "theme": "الحاله"
+    "islami": "اسلامي",
+    "suraName": "اسم السورة",
+    "ahadeth": "احاديث",
+    "language": "اللغه",
+    "light": "مضئ",
+    "dark": "مظلم",
+    "theme": "الحاله",
+    "sobhanAllah": "سبحان الله",
+    "elhamdlelah": "الحمد لله",
+    "allahAkbar": "الله اكبر",
+    "tasbehNumber": "عدد التسبيحات",
+    "radioQuranKareem": "راديو القراّن الكريم"
+
 }
